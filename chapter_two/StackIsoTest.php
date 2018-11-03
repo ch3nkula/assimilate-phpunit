@@ -13,7 +13,7 @@ class StackIsoTest extends TestCase
 	public function testEmpty()
 	{
 		$stack = [];
-		$this->assertEmtpy( $stack );
+		$this->assertEmpty( $stack );
 
 		return $stack;
 	}
