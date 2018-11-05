@@ -16,8 +16,16 @@ class SampleEmptyTest extends TestCase
 		$this->assertTrue( true, 'This should already work.' );
 
 		// Stop here and mark this test as incomplete.
+		// Use an explanatory reason
 		$this->markTestIncomplete(
 			'This test has not been implemented yet.'
 		);
+	}
+
+	public function testAnotherSomething()
+	{
+		// Stop here and mark this test as incomplete
+		// Don't use explanatory reason here
+		$this->markTestIncomplete();
 	}
 }
