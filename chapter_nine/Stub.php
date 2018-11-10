@@ -8,8 +8,8 @@
 
 class Stub
 {
-	public function doSomething()
-	{
-		// Do something :)
-	}
+    public function doSomething()
+    {
+        // Do something :)
+    }
 }

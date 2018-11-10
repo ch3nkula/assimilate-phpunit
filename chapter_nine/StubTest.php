@@ -12,16 +12,16 @@ use PHPUnit\Framework\TestCase;
 
 class StubTest extends TestCase
 {
-	public function testStub()
-	{
-		// Create a stub for the Stub class.
-		$stub = $this->createMock( Stub::class );
+    public function testStub()
+    {
+        // Create a stub for the Stub class.
+        $stub = $this->createMock(Stub::class);
 
-		// Configure the stub.
-		$stub->method('doSomething')
-			 ->willReturn( 'foo' );
+        // Configure the stub.
+        $stub->method('doSomething')
+            ->willReturn('foo');
 
-		// Calling $stub->doSomething() will now return 'foo'
-		$this->assertSame( 'foo', $stub->doSomething() );
-	}
+        // Calling $stub->doSomething() will now return 'foo'
+        $this->assertSame('foo', $stub->doSomething());
+    }
 }
